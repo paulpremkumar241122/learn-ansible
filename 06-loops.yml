@@ -2,19 +2,19 @@
   hosts: localhost
   connection: local
   tasks:
-    - name: Print Week Names in telugu
+    - name: Print Fruit Names
       ansible.builtin.debug:
-        msg: Eroju 'a-varam' - {{ item }}
+        msg: Fruit Name - {{ item }}
       loop:
-        - Mangalavaram
-        - Shanivaram
-        - Somavaram
-        - Adivaram
-    - name: e roju m ledu ahaa movement
+        - apple
+        - banana
+        - grapes
+        - orange
+    - name: Print Fruit Name with Quantity
       ansible.builtin.debug:
-        msg:
+        msg: Fruit Name - {{ item.Name }}, Quantity - {{ item.Quantity }}
       loop:
-        - { Eroju: Mangalavaram, Rathri: 11 }
-        - { Eroju: Shanivaram, Rathri: 10 }
-        - { Eroju: Somavaram, Rathri: 12 }
-        - { Eroju: Adivaram, Rathri: 09 }
+        - { Name: apple, Quantity: 100 }
+        - { Name: banana, Quantity: 200 }
+        - { Name: grapes, Quantity: 300 }
+        - { Name: orange, Quantity: 500 }
