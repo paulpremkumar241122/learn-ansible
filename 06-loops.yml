@@ -1,0 +1,12 @@
+- name: Demo on loops
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Print Week Names in telugu
+      ansible.builtin.debug:
+        msg: Eroju - {{ item }}
+      loop:
+        - Mangalavaram
+        - Shanivaram
+        - Somavaram
+        - Adivaram
