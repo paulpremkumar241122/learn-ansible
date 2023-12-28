@@ -4,9 +4,17 @@
   tasks:
     - name: Print Week Names in telugu
       ansible.builtin.debug:
-        msg: Eroju - {{ item }}
+        msg: Eroju 'a-varam' - {{ item }}
       loop:
         - Mangalavaram
         - Shanivaram
         - Somavaram
         - Adivaram
+    - name: Print Week Names in telugu with time
+      ansible.builtin.debug:
+        msg:
+      loop:
+        - { Eroju: Mangalavaram, Rathri: 11 }
+        - { Eroju: Shanivaram, Rathri: 10 }
+        - { Eroju: Somavaram, Rathri: 12 }
+        - { Eroju: Adivaram, Rathri: 09 }
