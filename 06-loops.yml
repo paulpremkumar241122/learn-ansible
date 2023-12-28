@@ -10,7 +10,7 @@
         - Shanivaram
         - Somavaram
         - Adivaram
-    - name: Print Week Names in telugu with time
+    - name: e roju m ledu ahaa movement
       ansible.builtin.debug:
         msg:
       loop:
