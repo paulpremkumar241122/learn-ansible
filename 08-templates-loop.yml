@@ -1,0 +1,14 @@
+- name: Demo on templates - loop
+  hosts: localhost
+  connection: local
+  vars:
+    kayalu:
+      - name: puchakaya
+        enni: 100
+      - name: batthai
+        enni: 50
+  tasks:
+    - name: Copy file
+      ansible.builtin.template:
+        src: test.txt
+        dest: /tmp/test.txt

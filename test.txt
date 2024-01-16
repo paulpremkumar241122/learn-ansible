@@ -1,0 +1,7 @@
+{% for item in navigation %}
+
+kaya_peru = {{ item.kaya_peru }}
+enni = {{ item.enni }}
+
+{% endfor %}
+
