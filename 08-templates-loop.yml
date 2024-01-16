@@ -2,11 +2,11 @@
   hosts: localhost
   connection: local
   vars:
-    kayalu:
-      - name: puchakaya
-        enni: 100
-      - name: batthai
-        enni: 50
+    fruits:
+      - name: apple
+        quantity: 100
+      - name: orange
+        quantity: 50
   tasks:
     - name: Copy file
       ansible.builtin.template:

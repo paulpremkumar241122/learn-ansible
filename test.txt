@@ -1,7 +1,7 @@
 {% for item in navigation %}
 
-kaya_peru = {{ item.kaya_peru }}
-enni = {{ item.enni }}
+Fruit Name = {{ item.name }}
+Quantity = {{ item.Quantity }}
 
 {% endfor %}
 
